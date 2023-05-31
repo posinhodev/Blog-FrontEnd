@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+.App{
+  display: grid;
+  grid-template-rows: 10em 50vh auto 10em;
+  grid-template-columns: 1fr 5fr 2fr 1fr;
+  grid-template-areas: "header header header header" ". main sidebar .";
+}
+
+.nav {
+  text-decoration: none;
+  align-self: center;
+  grid-area: header;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.10);
+  padding: 10px;
+  border-radius: 4px;
+  background: white;
+}
+
+.page_title {
+  font-family: 'Montserrat';
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.main{
+  grid-area: main;
+}
+
+/*Tittle*/
+.section_title{
+  margin-bottom: 5px;
+  font-family: 'Montserrat-Bold';
+  font-size: 22px;
+  color: white;
+}
+
+.sidebar{
+  grid-area: sidebar;
+  padding: 15px;
+  margin-left: 25px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.20);
+  border: 1px solid #8b8a8b;
+  border-radius: 5px;
+  background: white ;
+}
+
+.card{
+  display: grid;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.10);
+}
+
+.card-title{
+  margin-bottom: 5px;
+}
+
+input, textarea, button{
+  padding: 0.25em 0.50em;
+  width: 100%;
+  border: 2px solid #8b8a8b;
+  border-radius: 4px;
+}
+
+textarea{
+  min-height: 15vh;
+  resize: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+.error_field{
+  width: 100%;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: rgba(232, 51, 51);
+}
+
+.error_text{
+  color: white;
+}
